@@ -8,7 +8,7 @@ const Hero = () => {
     <main id="home" className="bg-orange-500 w-full min-h-screen">
       <section className="flex flex-col md:flex-row items-center justify-between w-full px-6 md:px-24 py-10 md:py-20 gap-10">
         {/* Tulisan */}
-        <div className="flex flex-col justify-center items-start text-left max-w-xl w-full">
+        <div className="flex flex-col justify-center items-start text-left w-full md:flex-1">
           <h1 className="text-4xl md:text-[64px] leading-[1.1] font-extrabold text-neutral-50 mb-6 uppercase">
             Nikmati Camilan
             <br />
@@ -27,11 +27,11 @@ const Hero = () => {
         </div>
 
         {/* Gambar */}
-        <div className="w-full md:w-auto h-auto transform rotate-3 overflow-hidden shadow-2xl flex justify-center">
+        <div className="flex justify-end items-center w-full md:flex-1">
           <img
             src={heroImage}
             alt="Crispy Snack"
-            className="w-full md:w-[520px] h-auto object-cover rounded-2xl"
+            className="w-full shadow-lg rotate-2"
           />
         </div>
       </section>
