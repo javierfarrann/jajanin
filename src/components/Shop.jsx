@@ -13,28 +13,28 @@ const products = [
     name: "Keripik Singkong",
     type: "Tradisional",
     image:
-      "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
     price: "Rp 12.000",
   },
   {
     name: "Onde-onde",
     type: "Tradisional",
     image:
-      "https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=400&q=80",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
     price: "Rp 10.000",
   },
   {
     name: "Potato Chips",
     type: "Modern",
     image:
-      "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
     price: "Rp 18.000",
   },
   {
     name: "Chocolate Cookies",
     type: "Modern",
     image:
-      "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
     price: "Rp 20.000",
   },
   {

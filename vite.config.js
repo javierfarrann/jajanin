@@ -7,5 +7,4 @@ import tailwindcss from '@tailwindcss/vite'
 const repoName = 'jajanin'
 export default defineConfig({
   plugins: [tailwindcss(), react()],
-  base: `/${repoName}/`,
 })

@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToHashElement from "./components/ScrollToHashElement";
+
 import Hero from "./components/homepage/Hero.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Bestseller from "./components/homepage/Bestseller.jsx";
@@ -14,14 +16,18 @@ const App = () => {
       <div className="overflow-x-hidden">
         <Navbar />
         <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <Bestseller />
-              <Visit />
-              <Review />
-            </>
-          } />
+          <Route
+            path="/"
+            element={
+              <>
+                <ScrollToHashElement />
+                <Hero />
+                <Bestseller />
+                <Visit />
+                <Review />
+              </>
+            }
+          />
           <Route path="/shop" element={<Shop />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
