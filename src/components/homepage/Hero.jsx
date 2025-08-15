@@ -5,9 +5,9 @@ const heroImage =
 
 const Hero = () => {
   return (
-    <main id="home" className="bg-orange-500 w-full min-h-screen">
+    <main id="home" className="bg-orange-500 w-full min-h-800px">
       <section className="flex flex-col md:flex-row items-center justify-between w-full px-6 md:px-24 py-10 md:py-20 gap-10">
-        {/* Tulisan */}
+        {/* Teks */}
         <div className="flex flex-col justify-center items-start text-left w-full md:flex-1">
           <h1 className="text-4xl md:text-[64px] leading-[1.1] font-extrabold text-neutral-50 mb-6 uppercase">
             Nikmati Camilan

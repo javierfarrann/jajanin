@@ -41,7 +41,7 @@ const Review = () => {
   return (
     <section
       id="reviews"
-      className="bg-white w-full min-h-screen flex flex-col items-center py-16"
+      className="bg-orange-50 w-full min-h-200 flex flex-col items-center py-6"
     >
       <h2 className="text-4xl font-bold text-orange-500 mb-10">Review Pembeli</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl px-8">

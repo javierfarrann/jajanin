@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Cart = () => {
   const [cart, setCart] = useState([]);
 
-  // Ambil data keranjang dari localStorage (atau bisa dari context/global state jika sudah ada)
+  // Ambil data keranjang dari localStorage
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCart(storedCart);

@@ -1,24 +1,24 @@
 import React from "react";
 
 const bestSeller = {
-  name: "Crispy Snack",
+  name: "Pastel Spesial Jajanin",
   description:
     "Camilan renyah favorit semua orang, cocok untuk segala suasana!",
   image:
     "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
-  price: "Rp 15.000",
-  originalPrice: "Rp 20.000",
+  price: "Rp 6.000/pcs",
+  originalPrice: "Rp 10.000",
 };
 
 const Bestseller = () => {
   return (
     <section
       id="bestseller"
-      className="bg-orange-50 w-full min-h-screen flex items-center justify-center px-6 md:px-24 py-10 md:py-20"
+      className="bg-orange-50 w-full min-h-200 flex items-center justify-center px-6 md:px-10 py-10 md:py-10"
     >
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 w-full max-w-7xl">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-12 w-full max-w-7xl">
         {/* Gambar */}
-        <div className="w-full md:w-1/2 transform rotate-3 overflow-hidden shadow-2xl">
+        <div className="w-full md:w-1/2 transform rotate-3 overflow-hidden shadow-2xl mb-8 md:mb-0">
           <img
             src={bestSeller.image}
             alt={bestSeller.name}
