@@ -5,3 +5,11 @@ body, html {
   padding: 0;
   scroll-behavior: smooth;
 }
+
+
+button {
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  width: fit-content;
+}

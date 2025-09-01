@@ -18,6 +18,7 @@ const App = () => {
   return (
     <>
       <div className="overflow-x-hidden">
+        <FloatingCartButton />
         <Navbar />
         <Routes>
           {/* Home Page */}
@@ -51,9 +52,6 @@ const App = () => {
           </p>
         </footer>
       </div>
-
-      {/* ✅ Floating Cart dipisah biar fixed dan selalu nongol */}
-      <FloatingCartButton />
     </>
   );
 };

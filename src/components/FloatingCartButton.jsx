@@ -1,7 +1,7 @@
 import { ShoppingCart } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCount } from "../utils/cart"; // ✅ pakai helper yang udah kamu bikin
+import { getCount } from "../utils/cart";
 
 export default function FloatingCartButton() {
   const [cartCount, setCartCount] = useState(getCount());
@@ -30,7 +30,7 @@ export default function FloatingCartButton() {
   return (
     <button
   onClick={() => navigate("/cart")}
-  className="fixed bottom-6 right-6 bg-orange-500 text-white p-4 rounded-full shadow-lg hover:bg-orange-600 transition relative z-50"
+  className="bottom-6 right-6 bg-orange-500 text-white p-4 rounded-full shadow-lg hover:bg-orange-600 transition relative z-50" 
 >
   <ShoppingCart size={24} />
   {cartCount > 0 && (
