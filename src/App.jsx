@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ScrollToHashElement from "./components/ScrollToHashElement";
 
 import Hero from "./components/homepage/Hero.jsx";
@@ -9,15 +9,14 @@ import Visit from "./components/homepage/Visit.jsx";
 import Review from "./components/Review.jsx";
 import Shop from "./components/Shop.jsx";
 import Cart from "./components/Cart.jsx";
-
-// Import halaman profil
 import Profile from "./components/profile/Profile.jsx";
 import History from "./components/profile/History.jsx";
 import Edit from "./components/profile/Edit.jsx";
+import FloatingCartButton from "./components/FloatingCartButton.jsx";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <div className="overflow-x-hidden">
         <Navbar />
         <Routes>
@@ -52,7 +51,10 @@ const App = () => {
           </p>
         </footer>
       </div>
-    </Router>
+
+      {/* ✅ Floating Cart dipisah biar fixed dan selalu nongol */}
+      <FloatingCartButton />
+    </>
   );
 };
 

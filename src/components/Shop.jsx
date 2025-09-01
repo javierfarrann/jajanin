@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getProducts } from "../services/productService";
+import { addToCart } from "../utils/cart"; // ✅ pakai helper baru
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -42,6 +43,13 @@ const Shop = () => {
           <p className="text-sm text-gray-400">
             Kadaluarsa: {product.expiryDate}
           </p>
+
+          <button
+            onClick={() => addToCart(product)}
+            className="mt-3 w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition"
+          >
+            Tambah ke Keranjang
+          </button>
         </div>
       ))}
     </div>
